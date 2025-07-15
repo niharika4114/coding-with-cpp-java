@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+void prnt(int &num1)
+{
+    num1+=10;
+    cout<<num1<<endl;
+    num1+=10;
+    cout<<num1<<endl;
+}
+int main()
+{
+    int num1=10;
+    prnt(num1);
+    cout<<num1<<endl;
+    return 0;
+}
