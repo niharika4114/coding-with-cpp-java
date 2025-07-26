@@ -1,6 +1,6 @@
-   *
- * * *
 * * * * *
+  * * *
+    *
 
 void nStarTriangle(int n) {
     // Write your code here.
