@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class armstrong {
+    public static boolean arm(int n) {
+        int k = n;
+        int sum = 0;
+        int digits = String.valueOf(n).length();
+        while (n != 0) {
+            int lastdigit = n % 10;
+            n = n / 10;
+            sum += Math.pow(lastdigit, digits);
+        }
+        return sum == k;
+    }
+
+    public static void main(String[] args) {
+        int n;
+        Scanner obj = new Scanner(System.in);
+        n = obj.nextInt();
+        System.out.println(n + "is a armstrong number?  " + arm(n));
+    }
+}
