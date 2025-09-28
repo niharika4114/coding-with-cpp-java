@@ -1,0 +1,18 @@
+import java.util.*;
+public class count {
+    public static int digits(int n) {
+        int count = 0;
+        while (n > 0) {
+            count = count + 1;
+            n = n / 10;
+        }
+        return count;
+    }
+
+    public static void main(String[] args) {
+        int n;
+        Scanner obj = new Scanner(System.in);
+        n = obj.nextInt();
+        System.out.println("the number of digits are" + digits(n));
+    }
+}
