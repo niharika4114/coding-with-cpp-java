@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class divisors {
+    public static void prin(int n) {
+        for (int i = 1; i <= Math.sqrt(n); i++) {
+            if (n % i == 0) {
+                System.out.println(i);
+                if (i != (n / i)) {
+                    System.out.println(n / i);
+                }
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        int n;
+        Scanner obj = new Scanner(System.in);
+        n = obj.nextInt();
+        prin(n);
+    }
+}
