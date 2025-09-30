@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class gcd {
+    public static void high(int n1, int n2) {
+        while (n1 > 0 && n2 > 0) {
+            if (n1 > n2) {
+                n1 = n1 % n2;
+            } else {
+                n2 = n2 % n1;
+            }
+        }
+        if (n1 == 0) {
+            System.out.print(n2);
+        } else {
+            System.out.print(n1);
+        }
+    }
+
+    public static void main(String[] args) {
+        int n1, n2;
+        Scanner obj = new Scanner(System.in);
+        n1 = obj.nextInt();
+        n2 = obj.nextInt();
+        high(n1, n2);
+        obj.close();
+    }
+}
